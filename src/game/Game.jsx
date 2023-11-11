@@ -51,6 +51,24 @@ function Game(){
                         if (newSeconds === 30){
                             dispatch(increment)
                         }
+                        if (newSeconds === 35){
+                            dispatch(increment)
+                        }
+                        if (newSeconds === 40){
+                            dispatch(increment)
+                        }
+                        if (newSeconds === 45){
+                            dispatch(increment)
+                        }
+                        if (newSeconds === 50){
+                            dispatch(increment)
+                        }
+                        if (newSeconds === 55){
+                            dispatch(increment)
+                        }
+                        if (newSeconds === 60){
+                            dispatch(increment)
+                        }
                         if (newSeconds >= 60) {
                             return { ...timer, seconds: 0 };
                         } else {
@@ -61,7 +79,7 @@ function Game(){
                     return timer;
                 })
             );
-        }, 150);
+        }, 500);
 
         return () => {
             clearInterval(interval);
