@@ -1,0 +1,45 @@
+.element{
+    @apply bg-[#f5ebcb] w-[475px] ml-[8px] mt-[10px] h-[154px] rounded-xl;
+}
+.top{
+    @apply flex flex-row font-[Poppins] font-bold;
+}
+.int{
+    @apply ml-[200px];
+}
+.center{
+    @apply flex flex-row justify-between;
+}
+.bh{
+    @apply mt-[20px] w-[65px];
+}
+.InFo{
+    @apply mt-[20px]
+}
+.dps2{
+    @apply text-[12px] mt-[20px];
+}
+.bottom{
+    @apply flex flex-row justify-center;
+}
+.button2{
+    @apply flex items-center w-[190px] flex flex-row bg-[#ffd445] rounded-[5px];
+}
+.myGold{
+    @apply w-[40px] h-[35px] ml-[7px];
+}
+.price{
+    @apply text-[25px] font-[Montserrat] ml-[10px];
+}
+.diamondBlock{
+    @apply flex flex-row items-center text-white w-[60px] h-[45px] bg-sky-300 ml-[25px] rounded-[5px] cursor-pointer;
+}
+.diamond{
+    @apply w-[40px] h-[40px] ml-[5px];
+}
+.diamondBlock:hover{
+    @apply duration-100 bg-white text-black;
+}
+.button2:hover{
+    @apply duration-100 bg-black text-white;
+}

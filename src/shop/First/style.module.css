@@ -1,0 +1,42 @@
+.first{
+    @apply flex flex-row w-[235px] h-[150px] border-[1px] border-black rounded-xl mt-[10px] ml-[6px];
+}
+.text{
+    @apply flex flex-col;
+}
+.mSh{
+    @apply ml-[10px] mt-[5px] font-bold font-[Poppins];
+}
+.dps{
+    @apply text-[12px] ml-[10px];
+}
+.info{
+    @apply flex flex-row;
+}
+.miniDOG{
+    @apply w-[60px] h-[55px];
+}
+.infO{
+    @apply text-[11px] font-[Montserrat] ml-[10px];
+}
+.buy{
+    @apply flex justify-center;
+}
+.button{
+    @apply w-[120px] flex flex-row bg-[#ffd445] rounded-[5px] mt-[-5px];
+}
+.myGold{
+    @apply w-[40px] h-[35px] ml-[7px];
+}
+.price{
+    @apply text-[25px] font-[Montserrat] ml-[10px];
+}
+.first1{
+    @apply flex justify-center w-[235px] h-[150px] border-[1px] border-black rounded-xl mt-[10px] ml-[6px];
+}
+.locked{
+    @apply p-3;
+}
+.button:hover{
+    @apply duration-100 bg-black text-white;
+}
