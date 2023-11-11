@@ -61,7 +61,7 @@ function Game(){
                     return timer;
                 })
             );
-        }, 200);
+        }, 150);
 
         return () => {
             clearInterval(interval);
