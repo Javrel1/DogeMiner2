@@ -23,7 +23,7 @@ function Fourth(){
         <div className={style.block}>
                 <div className={style.first4}>
                     <div className={style.text}>
-                        <a className={style.mSh}>Stock Kittens</a>
+                        <a className={style.mSh}>Rocket</a>
                         <a className={style.dps}>19.8 DPS</a>
                         <div className={style.info}>
                             <img onDragStart={handleDragStart} className={style.kittens} src={greenRocket}/>

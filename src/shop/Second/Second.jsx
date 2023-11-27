@@ -1,10 +1,9 @@
 import style from './style.module.css';
-import rockets from "../../resources/rockets.png";
+import weasel from "../../resources/weasel.png";
 import {decrement_2} from "../../store/reducer";
 import * as React from "react";
 import {useDispatch, useSelector} from "react-redux";
 import gold from '../../resources/gold.png';
-import md from "../../resources/md.png";
 
 function Second(){
 
@@ -14,7 +13,7 @@ function Second(){
 
     const handleDragStart = (event) => {
         dispatch(decrement_2)
-        event.dataTransfer.setData('text/plain', md);
+        event.dataTransfer.setData('text/plain', weasel);
         event.dataTransfer.effectAllowed = 'copy';
     };
 
@@ -26,9 +25,9 @@ function Second(){
                         <a className={style.mSh}>Jet-Pack Doges</a>
                         <a className={style.dps}>12.9 DPS</a>
                         <div className={style.info}>
-                            <img onDragStart={handleDragStart} draggable={true} src={rockets}/>
+                            <img className={style.weasel} onDragStart={handleDragStart} draggable={true} src={weasel}/>
                             <div className={style.Info}>
-                                <a className={style.infO}>Equipped with jet packs, doges travel</a>
+                                <a className={style.infO}>Helps you dig up more dogecoin</a>
                             </div>
                         </div>
                         <div className={style.buy}>

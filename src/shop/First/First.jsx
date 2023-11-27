@@ -7,16 +7,13 @@ import gold from '../../resources/gold.png';
 
 
 function First(){
-    const count = useSelector((state) => state);
     const dispatch = useDispatch();
-    var result;
 
     const handleDragStart = (event) => {
             dispatch(decrement_1)
             event.dataTransfer.setData('text/plain', md);
             event.dataTransfer.effectAllowed = 'copy';
     };
-
 
     return(
         <div className={style.block1}>

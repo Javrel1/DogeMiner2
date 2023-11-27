@@ -42,14 +42,6 @@
 .gold{
     @apply w-[50px] h-[45px] ml-[20px];
 }
-/*@keyframes Pick {*/
-/*    from {*/
-/*        rotate: 0deg*/
-/*    }*/
-/*    to {*/
-/*        rotate: -75deg*/
-/*    }*/
-/*}*/
 .market{
     @apply bg-[#f5e5b5] w-[490px] h-[550px] ml-[20px] mt-[150px] rounded-2xl;
 }
@@ -78,8 +70,17 @@
     @apply p-3;
 }
 .drop{
-    @apply w-[100px] h-[60px] border-2 border-amber-300
+    @apply w-[100px] h-[60px] border-2 border-amber-300;
 }
-.timer{
-    @apply absolute
+.earthBlock{
+    @apply w-[60px] h-[60px] mt-[640px] absolute ml-[-450px];
+}
+.planets{
+    @apply flex flex-row w-[200px] absolute mt-[85px];
+}
+.planetBlock1{
+    @apply w-[50px] h-[50px] bg-gray-200 rounded-2xl ml-[20px] cursor-pointer;
+}
+.planetBlock2{
+    @apply w-[50px] h-[50px] bg-gray-200 rounded-2xl ml-[10px] cursor-pointer;
 }

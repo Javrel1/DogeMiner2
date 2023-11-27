@@ -1,31 +1,17 @@
-// import React, { useState } from 'react';
-// import pick from '../resources/pick.png';
-// const Timer = () => {
-//     const [rotation, setRotation] = useState(0);
-//
-//     const handleMouseDown = () => {
-//         setRotation(rotation + 90);
-//     };
-//
-//     const handleMouseUp = () => {
-//         setRotation(0);
-//     };
-//
-//     const imageStyle = {
-//         , // Устанавливаем точку вращения в нижнюю часть изображения
-//         transform: `rotate(${rotation}deg)`,
-//         transition: 'transform 0.3s ease',
-//     };
-//
-//     return (
-//         <img
-//             src={pick} // Укажите путь к вашей картинке
-//             alt="Rotatable Image"
-//             style={imageStyle}
-//             onMouseDown={handleMouseDown}
-//             onMouseUp={handleMouseUp}
-//         />
-//     );
-// };
-//
-// export default Timer;
+import {useState} from "react";
+
+function Timer(){
+    const [isVisible, setIsVisible] = useState(false);
+
+    const handleButtonClick = () => {
+        setIsVisible(!isVisible);
+    };
+
+    return (
+        <div>
+            <button onClick={handleButtonClick}>Нажми меня</button>
+            {isVisible && <div>Элемент появился!</div>}
+        </div>
+    );
+}
+export default Timer;

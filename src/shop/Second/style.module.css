@@ -13,6 +13,9 @@
 .info{
     @apply flex flex-row;
 }
+.weasel{
+    @apply w-[60px] h-[55px];
+}
 .Info{
     @apply mt-[-14px];
 }

@@ -17,7 +17,7 @@
     @apply h-[40px];
 }
 .Info{
-    @apply mt-[-14px];
+    @apply mt-[-12px];
 }
 .INFo{
     @apply text-[11px] font-[Montserrat] ml-[10px];
