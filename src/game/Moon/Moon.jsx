@@ -1,25 +1,26 @@
 import style from './style.module.css';
-import pick from '../resources/pick.png'
-import dog from '../resources/dog.png'
+import pick from '../../resources/pick.png'
+import dog from '../../resources/dog.png'
 import {useSelector, useDispatch} from "react-redux"
-import {increment} from "../store/reducer.jsx"
-import ground from '../resources/ground.png';
-import locked from '../resources/locked.png';
+import {increment} from "../../store/reducer.jsx"
+import ground from '../../resources/ground.png';
+import locked from '../../resources/locked.png';
 import {useEffect, useState} from "react";
 import * as React from 'react';
-import First from "../shop/First/First";
-import Second from "../shop/Second/Second";
-import Third from "../shop/Third/Third";
-import UpFirst from "../upgrade/UpFirst/UpFirst";
-import UpSecond from "../upgrade/UpSecond/UpSecond";
-import UpThird from '../upgrade/UpThird/UpThird';
+import First from "../../shop/First/First";
+import Second from "../../shop/Second/Second";
+import Third from "../../shop/Third/Third";
+import UpFirst from "../../upgrade/UpFirst/UpFirst";
+import UpSecond from "../../upgrade/UpSecond/UpSecond";
+import UpThird from '../../upgrade/UpThird/UpThird';
 import { motion } from "framer-motion"
-import mars from '../resources/mars.png';
-import moon from '../resources/moon.png';
-import earth from '../resources/earth.png';
-import neptune from '../resources/neptune.png';
+import mars from '../../resources/mars.png';
+import earth from '../../resources/earth.png';
+import neptune from '../../resources/neptune.png';
+import { Link } from "react-router-dom";
+import moon from "../../resources/moon.png";
 
-function Game() {
+function Moon() {
     const count = useSelector((state) => state);
     const dispatch = useDispatch();
 
@@ -167,14 +168,14 @@ function Game() {
                     </div>
                 </div>
                 <div className={style.earthBlock}>
-                    <img draggable={false} src={earth}/>
+                    <img draggable={false} src={moon}/>
                 </div>
             </div>
             <div className={style.right}>
                 <div className={style.planets}>
-                    <div className={style.planetBlock1}><img draggable={false} src={moon}/></div>
-                    <div className={style.planetBlock2}><img draggable={false} src={mars}/></div>
-                    <div className={style.planetBlock2}><img draggable={false} src={neptune}/></div>
+                    <Link to={'/'}><div className={style.planetBlock1}><img draggable={false} src={earth}/></div></Link>
+                    <Link to={'/mars'}><div className={style.planetBlock2}><img draggable={false} src={mars}/></div></Link>
+                    <Link to={'/moon'}><div className={style.planetBlock2}><img draggable={false} src={neptune}/></div></Link>
                 </div>
                 <div className={style.market}>
                     <div className={style.settings}>
@@ -183,7 +184,6 @@ function Game() {
                     </div>
                     {isShop ?
                         <div className={'qwe'}>
-
                             <div className={style.block1}>
                                 <First/>
                                 <Second/>
@@ -214,4 +214,5 @@ function Game() {
         </div>
     )
 }
-export default Game;
+export default Moon;
+

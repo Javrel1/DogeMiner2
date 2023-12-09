@@ -2,12 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Poppins:wght@300&display=swap');
 .container{
     @apply flex justify-center items-center w-full h-[850px] bg-white;
+    user-select: none;
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    -webkit-user-select: none; /* Chrome, Safari, and Opera */
 }
 .buttons{
     @apply flex flex-row;
 }
 .game1{
-    @apply flex flex-col justify-center items-center w-[550px] h-[725px] bg-[#ebddb3] rounded-2xl;
+    @apply flex flex-col justify-center items-center w-[550px] h-[725px] bg-[#267fff] rounded-2xl;
 }
 .dogHolder{
     @apply flex flex-row mt-[300px];
@@ -43,10 +47,10 @@
     @apply w-[50px] h-[45px] ml-[20px];
 }
 .market{
-    @apply bg-[#f5e5b5] w-[490px] h-[550px] ml-[20px] mt-[150px] rounded-2xl;
+    @apply bg-[#267fff] w-[490px] h-[550px] ml-[20px] mt-[150px] rounded-2xl;
 }
 .upGrade{
-    @apply bg-[#ebddb3] w-[490px] h-[450px] rounded-2xl;
+    @apply bg-[#267fff] w-[490px] h-[450px] rounded-2xl;
 }
 .settings{
     @apply flex flex-row bg-[#979080] w-[470px] h-[50px]  ml-[10px] rounded-xl;

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Poppins:wght@300&display=swap');
+.container{
+    @apply flex justify-center items-center w-full h-[850px] bg-white;
+    user-select: none;
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    -webkit-user-select: none; /* Chrome, Safari, and Opera */
+}
+.buttons{
+    @apply flex flex-row;
+}
+.game1{
+    @apply flex flex-col justify-center items-center w-[550px] h-[725px] bg-[#f98500] rounded-2xl;
+}
+.dogHolder{
+    @apply flex flex-row mt-[300px];
+}
+.Gground {
+    @apply w-[100px] h-[100px];
+}
+.Ddog {
+    @apply w-[140px] h-[100px];
+}
+.blockDog{
+    @apply w-[220px] h-[120px];
+}
+.groundBlock {
+    @apply w-[300px] h-[200px] mt-[30px];
+}
+.ground{
+    @apply w-[300px] h-[200px] cursor-pointer;
+}
+.dog{
+    @apply w-[150px] h-[150px] ml-[70px] mt-[40px];
+}
+.pick2{
+    @apply w-[140px] h-[180px] ml-[-30px] cursor-pointer mt-[20px];
+}
+.pick2 img{
+    @apply h-[220px] mt-[-30px]
+}
+.count{
+    @apply flex flex-row font-[Poppins] mt-[-40px] text-4xl;
+}
+.gold{
+    @apply w-[50px] h-[45px] ml-[20px];
+}
+.market{
+    @apply bg-[#f98500] w-[490px] h-[550px] ml-[20px] mt-[150px] rounded-2xl;
+}
+.upGrade{
+    @apply bg-[#f98500] w-[490px] h-[450px] rounded-2xl;
+}
+.settings{
+    @apply flex flex-row bg-[#979080] w-[470px] h-[50px]  ml-[10px] rounded-xl;
+}
+.shop{
+    @apply w-[100px] h-[40px] rounded-t-[7px] font-bold bg-white ml-[20px] mt-[10px] font-[Poppins] text-[#0074c7];
+}
+.upgrade{
+    @apply w-[100px] h-[40px] rounded-t-[7px] font-bold bg-[#ffdc6c] mt-[10px] ml-[20px] text-[#4c3000];
+}
+.element{
+    @apply bg-[#f5ebcb] w-[475px] ml-[8px] mt-[10px] h-[154px] rounded-xl;
+}
+.block1 {
+    @apply flex flex-row;
+}
+.first1{
+    @apply flex justify-center w-[235px] h-[150px] border-[1px] border-black rounded-xl mt-[10px] ml-[6px];
+}
+.locked{
+    @apply p-3;
+}
+.drop{
+    @apply w-[100px] h-[60px] border-2 border-amber-300;
+}
+.earthBlock{
+    @apply w-[60px] h-[60px] mt-[640px] absolute ml-[-450px];
+}
+.planets{
+    @apply flex flex-row w-[200px] absolute mt-[85px];
+}
+.planetBlock1{
+    @apply w-[50px] h-[50px] bg-gray-200 rounded-2xl ml-[20px] cursor-pointer;
+}
+.planetBlock2{
+    @apply w-[50px] h-[50px] bg-gray-200 rounded-2xl ml-[10px] cursor-pointer;
+}
